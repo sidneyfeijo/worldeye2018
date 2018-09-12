@@ -1,0 +1,55 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-actionsheet": {
+            "PACKAGE_NAME": "com.lucasgreis92.realmoney"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "com.lucasgreis92.realmoney"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.lucasgreis92.realmoney"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.lucasgreis92.realmoney"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "com.lucasgreis92.realmoney"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "com.lucasgreis92.realmoney"
+        },
+        "cordova-plugin-file-transfer": {
+            "PACKAGE_NAME": "com.lucasgreis92.realmoney"
+        },
+        "cordova-plugin-filepath": {
+            "PACKAGE_NAME": "com.lucasgreis92.realmoney"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.lucasgreis92.realmoney"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.lucasgreis92.realmoney"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.lucasgreis92.realmoney"
+        },
+        "cordova-sms-plugin": {
+            "PACKAGE_NAME": "com.lucasgreis92.realmoney"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "com.lucasgreis92.realmoney"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "com.lucasgreis92.realmoney"
+        }
+    }
+}

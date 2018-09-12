@@ -1,0 +1,199 @@
+/* mobiscroll */
+.demo-non-form {
+    color: initial;
+    width: 100%;
+    padding: 10px;
+    margin: 6px 0 12px 0;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    font-family: arial, verdana, sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+}
+
+.demo-container {
+    padding: 0 1em;
+}
+/* mobiscroll */
+.home-div-menu-icon{
+	text-align: center;
+	height: 14%;
+}
+.home-icon-font{
+	color:
+	rgb(154,190,204);
+}
+.home-icon-font-activi{
+	font-weight:bold;
+	color:rgb(42,177,223);
+}
+.home-slider-style{
+	height: 78%
+}
+.home-slider-content{
+	position: relative;
+	left: 15px;
+}
+.home-row-input{
+	height: 76px;
+}
+.home-col-select{
+	background-color: rgb(232,229,229);
+}
+.home-p-select{
+	/*top: 30%;*/
+	/*left: 20%;*/
+	/*position:relative;
+	top: 15%;
+	left: 12%;*/
+	padding-top:0px;
+}
+.home-selec{
+	/*width: 70%;*/
+	width: 85%;
+	/*max-width: 110px;*/
+	max-width: 250px;
+}
+.home-selec2{
+	/*width: 88%;*/
+	width: 100%;
+	max-width: 250px;
+	/*font-size:0.6em !important;*/
+	font-size:0.9em !important;
+	/*color: #ff0000 !important;*/
+	/*padding-left:.4em !important;*/
+	/*height: 60%;*/
+}
+.home-flag-position{
+	position:relative; 
+	/*left:10px;*/
+	left:2px;
+	/*top: -30%;*/
+	top: -45%;
+}
+.home-flag-position-gbp{
+	/*left:10px;*/
+	/*position: relative;
+	left:2px;
+	top: -20%;*/	
+}
+.home-label-valor{
+	/*background-color:white;*/
+	background-color: rgb(232,229,229);
+	text-align: left;
+	/*border-color:rgb(194,222,237);*/
+	width: 100%;
+	color: rgb(39,83,135) !important;
+}
+.home-valor-dest{
+	position: relative;
+	top: -20%;
+	left: -11%;
+	text-align: right;
+}
+.home-input-label-font{
+	/*top: -15px;*/
+	/*position:relative;
+	top: -12px;*/
+	/*color: rgb(194,222,237);*/
+	font-weight:bold;
+	color: rgb(39,83,135) !important;
+}
+.home-valor-label-font{
+	font-size:50;
+	color: rgb(39,83,135) !important;
+	text-align: right;
+	/*width: 80%;
+	position: relative;
+	top: -18%;
+	left: -5%;
+	width: 60%;*/
+	width: 60%;
+	text-shadow:0 1px 0 rgba(255,255,255,.5);
+	border:1px solid #bbb;
+	-webkit-box-shadow:0 1px 0 rgba(0,0,0,.05),inset 0 1px 0 rgba(255,255,255,.8);
+	box-shadow:0 1px 0 rgba(0,0,0,.05),inset 0 1px 0 rgba(255,255,255,.8);
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	background-color:#f9f9f9;
+	background-image:-webkit-linear-gradient(#fafafa,#eee);
+	background-image:-moz-linear-gradient(#fafafa,#eee);
+	background-image:-ms-linear-gradient(#fafafa,#eee);
+	background-image:-o-linear-gradient(#fafafa,#eee);
+	background-image:linear-gradient(#fafafa,#eee);
+}
+.home-gbp{
+	background-color: white;
+	/*width: 70%;*/
+	width: 85%;
+	/*max-width: 110px;*/
+	max-width: 250px;
+	position: relative;
+	/*left: 20%;*/
+	left: 15%;
+	/*top:10px;*/
+	top:7px;
+	color:rgb(2,54,87) !important;
+	text-shadow:0 1px 0 rgba(255,255,255,.5);
+	border:1px solid #bbb;
+	-webkit-box-shadow:0 1px 0 rgba(0,0,0,.05),inset 0 1px 0 rgba(255,255,255,.8);
+	box-shadow:0 1px 0 rgba(0,0,0,.05),inset 0 1px 0 rgba(255,255,255,.8);
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	/*font-weight:inherit;*/
+	font-weight:550;
+	background-color:#f9f9f9;
+	background-image:-webkit-linear-gradient(#fafafa,#eee);
+	background-image:-moz-linear-gradient(#fafafa,#eee);
+	background-image:-ms-linear-gradient(#fafafa,#eee);
+	background-image:-o-linear-gradient(#fafafa,#eee);
+	background-image:linear-gradient(#fafafa,#eee);
+	font-size:1.0em !important;
+	padding-left:8px;
+}
+.home-detail-font{
+	font-weight:bold;
+	color: rgb(39,83,135);
+}
+.home-text{
+	text-align: center; 
+	position: relative;
+	top: 5%;
+}
+.home-text-style-1{
+	font-weight:bold;
+	color: rgb(39,83,135) !important;
+}
+
+.home-text-style-2{
+	color: rgb(154,190,204) !important;
+}
+.home-text-style-3{
+	color: rgb(81,159,202) !important;
+}
+.home-text-style-4{
+	color: rgb(144,144,144) !important;
+}
+.home-text-style-5{
+	color: rgb(93,93,93) !important;
+}
+.home-slider-header{
+	background-color: rgb(81,159,202);
+	height: 30px;
+	border-top-left-radius : 100px;
+	border-top-right-radius: 100px;
+	text-align: center;
+}
+.home-slider-header-font{
+	font-weight:bold;
+	color: white;
+	position:relative;
+	top: 5px;
+}

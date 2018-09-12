@@ -1,0 +1,94 @@
+.slider-pager-page {
+	color: #519fca !important;
+}
+
+.myHeader{
+	background: rgb(195,231,249);
+	background-image: url('../img/logo.png');
+	background-repeat: no-repeat;
+	background-position: 50%;
+	background-size:contain;
+}
+.bar.myHeader .title{
+	font-size: 15px;
+	color: #fff
+}
+
+.myFooter{
+	background: rgb(81,159,202);	
+}
+.tabs-positive > .tabs{
+	background-color: rgb(215,215,215) !important;
+}
+.gray-background{
+	background-color: rgb(242,242,242);
+}
+
+.espacamento-horizontal{
+	width: 10px;
+}
+.icon-size{
+	width: 30%;
+	max-height: 50px;
+	max-width: 50px;
+
+}
+.button-rm{
+	width: 80px;
+	color:rgb(81,159,202);
+}
+.bar-stable .button.button-icon{
+	width:31px;
+	color:#fff;
+}	
+.bar.bar-stable .title{
+	font-size: 15px;
+	color: #fff
+}
+.bar.bar-stable{
+	background:rgb(195,231,249);
+	border:none
+}
+/* ******************** menu imagens ******************** */
+
+.tabs .tab-item .icon.ion-ios-pulse-strong {
+	content: url('../img/sends.png') !important;
+}
+.tabs .tab-item .icon.ion-ios-pulse {
+	content: url('../img/send.png') !important;
+}
+
+.tabs .tab-item .icon.ion-ios-chatboxes {
+	content: url('../img/invites.png') !important;
+}
+.tabs .tab-item .icon.ion-ios-chatboxes-outline {
+	content: url('../img/invite.png') !important;
+}
+
+.tabs .tab-item .icon.ion-ios-gear {
+	content: url('../img/transfers.png') !important;
+}
+.tabs .tab-item .icon.ion-ios-gear-outline {
+	content: url('../img/transfer.png') !important;
+}
+
+.tabs .tab-item .icon.ion-ios-nutrition {
+	content: url('../img/benefis.png') !important;
+}
+.tabs .tab-item .icon.ion-ios-nutrition-outline {
+	content: url('../img/benefi.png') !important;
+}
+
+.tabs .tab-item .icon.ion-ios-fastforward {
+	content: url('../img/profiles.png') !important;
+}
+.tabs .tab-item .icon.ion-ios-fastforward-outline {
+	content: url('../img/profile.png') !important;
+}
+
+.tabs .tab-item .icon.ion-ios-flask {
+	content: url('../img/logouts.png') !important;
+}
+.tabs .tab-item .icon.ion-ios-flask-outline {
+	content: url('../img/logout.png') !important;
+}

@@ -1,0 +1,84 @@
+<ion-view >
+  <ion-nav-bar class="bar myHeader" align-title="center">
+  
+  </ion-nav-bar> 
+  
+  <ion-content class="gray-background padding login_page">
+    <div class="home-slider-content">
+      <div class="row " class="home-row-input">
+        <div class="col col-50 home-col-select" >
+          <p class="home-p-select">
+            <div class="item item-input home-gbp" >
+              GBP
+            </div>
+            <div class="flag gb home-flag-position-gbp"></div>
+          </p>
+        </div>
+        <div class="espacamento-horizontal"></div>
+        <label class="item item-input item-stacked-label home-label-valor">
+          <span class="input-label" >
+            <font size="2"  class="home-input-label-font">You send</font>
+          </span>
+          <input class="home-valor-label-font" type="text" ng-model="valor" ng-model-options='{ debounce: 350 }' ng-change="moedaInputChange(valor);" ui-number-mask>
+        </label>
+      </div>
+      <div ></div>
+      <div class="row home-row-input" >
+        <div class="col col-50 home-col-select" >
+
+          <p  class="home-p-select">
+            <!--<select name="moedaDestinoSelect" ng-model="moedaDestino" class="form-control item item-input home-selec" 
+            ng-change="moedaDestinoChange(moedaDestino)" required  
+            ng-options="moeda as moeda.name for moeda in moedas" ng-focus="true">
+
+          </select>-->
+<!-- 	value-attr="id" JUL18 -->
+<select selector
+	multi="false"
+	model="mymoedast"
+	options="moedast1"
+	value-attr="ctry"
+	class="home-selec2"
+	remove-button="false"
+	change="updateMySelectedOptions(oldValue, newValue)"
+	view-item-template="'selector/demo/moedawithflagv'"
+	dropdown-item-template="'selector/demo/moedawithflag'"></select>
+          <div class="home-flag-position" ng-class="moedaDestino.flag"></div>
+        </p>
+
+      </div>
+      <div class="espacamento-horizontal"></div>
+      <label class="item item-input item-stacked-label home-label-valor">
+        <span class="input-label" >
+          <font size="2" class="home-input-label-font">Beneficiary receives</font>
+        </span>
+		<div class="home-valor-dest">
+          {{valorDestino}}
+        </div>
+      </label>
+    </div>
+    <div class="row ">
+      <div class="col">
+        <font size="2"  class="home-detail-font">
+          Rate: {{rate }}
+        </font>
+      </div>
+      <div class="col">
+        <font size="2" class="home-detail-font">
+          Fee: {{fee }}
+        </font>
+      </div>
+    </div>
+
+<script type="text/ng-template" id="selector/demo/moedawithflagv">
+	<span style="font-size:1.0em !important;color:rgb(2,54,87) !important;font-weight:550;">{{option.cur}}</span>
+</script>
+<script type="text/ng-template" id="selector/demo/moedawithflag">
+	<i class="flag" ng-class="option.flag.toLowerCase().replace('flag ','')"></i><span style="font-size:1.1em !important;color:rgb(2,54,87) !important;">{{option.name}}</span>
+</script>
+  </div>
+  <button type="button" class="button button-block button-positive reg_btn " style="top:20px" ng-click="goHomeBenefi(moedaDestino,valor,valorDestino,fee,rate);">
+    Send
+  </button>
+</ion-content>
+</ion-view>

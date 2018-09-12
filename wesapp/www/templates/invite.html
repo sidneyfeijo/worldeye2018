@@ -1,0 +1,42 @@
+<ion-view >
+	<ion-nav-bar class="bar myHeader" align-title="center">
+
+	</ion-nav-bar> 
+
+	<ion-content class="gray-background login_page" style="text-align: center;">
+		<div class="card">
+			<div class="item item-text-wrap">
+				<font size="4" class="home-text-style-1">
+					<p class="home-text-style-1">	Invite your friends</p>
+				</font>
+			</div>
+		</div>
+		
+		<div class="padding">
+			<font size="3" class="home-text-style-2">
+				<p>Invite your friends to take full advantage of using</p>
+			</font>
+
+			<font size="4" class="home-text-style-1">
+				<p>WES-Transfer</p>
+			</font>
+			<font size="3" class="home-text-style-2" >
+				<p>Your friend will recive a Code/Voucher to use when register to use the App </p>
+			</font>
+			<button ng-click="goEmail();;" type="button" class="button button-block button-positive log_btn icon-left ion-ios-email-outline">
+				Invite via Email
+			</button>
+		</button>
+		<button  ng-click="sendSMS();" type="button" class="button button-block button-positive reg_btn icon-left ion-android-textsms">
+			Invite via SMS
+		</button>
+		<button type="button" class="button button-block button-positive back_btn icon-left ion-ios-copy-outline" style="background-color:rgb(154,190,204);color:#FFFFFF;">
+			Copy the invite link
+		</button>
+
+	</div>
+
+
+</ion-content>
+<link href="//code.ionicframework.com/nightly/css/ionic.css" rel="stylesheet">
+  </ion-view>

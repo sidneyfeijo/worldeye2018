@@ -1,0 +1,136 @@
+<ion-view >
+	<ion-nav-bar class="bar myHeader" align-title="center">
+
+	</ion-nav-bar> 
+
+	<ion-content class="gray-background padding login_page" style="text-align: center;">
+		<div class="card">
+			<div class="item item-text-wrap">
+
+				<font size="4" class="home-text-style-1">
+					<p class="home-text-style-1">	Your profile</p>
+				</font>
+			</div>
+		</div>
+
+		<form name="formprofile" ng-submit="submit();">
+			<div class="row">
+				<div class="col col-33" style="position: relative;top:5px;">
+					<label style="color:  rgb(81,159,202);">First name</label>
+				</div>
+				<div class="col" >
+					<input type="text" ng-model="profile.FIRSTNAME" style="width: 110%;color:  rgb(39,83,135);padding-left:5px;">	
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col col-33" style="position: relative;top:5px;">
+					<label style="color:  rgb(81,159,202);" >Last name</label>
+				</div>
+				<div class="col" >
+					<input type="text"  ng-model="profile.LASTNAME" style="width: 110%;color:  rgb(39,83,135);padding-left:5px;">	
+				</div>
+			</div>
+			<div class="row">
+				<div class="col col-33" style="position: relative;top:5px;">
+					<label style="color:  rgb(81,159,202);">Date of birth</label>
+				</div>
+				<div class="col col-25" >
+					<!--<input type="date" ng-model="profile.DATEOFBIRTH" style="width: 110%;color:  rgb(39,83,135);padding-left:5px;">-->	
+					<input type="text" style="width: 125%;color:  rgb(39,83,135);padding-left:5px;" ng-model="profile.DATEOFBIRTH" mask="39/19/9999">	
+				</div>
+				<div class="col col-10" style="float:left !important;">
+					<button type="button" 
+					class="button button-icon icon-left ion-android-calendar" style="color:rgb(81,159,202);padding-left:10px;"
+					ng-click="openDatePicker();">
+					</button>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col col-33" style="position: relative;top:5px;">
+					<label style="color:  rgb(81,159,202);">Country</label>
+				</div>
+				<div class="col" >
+				<!--<select name="country" ng-model="profile.COUNTRY" class="form-control item item-input"
+			ng-options="country as country.name for country in countries" style="color:  rgb(39,83,135);padding-left:5px;">
+			<option value="">{{profile.COUNTRY}}</option>
+		</select>-->
+<select selector
+	multi="false"
+	model="countriest"
+	options="countriest1"
+	value-attr="id"
+	class="home-selec2"
+	remove-button="false"
+	change="updateMySelectedOptions(oldValue, newValue)"
+	view-item-template="'selector/demo/moedawithflagv'"
+	dropdown-item-template="'selector/demo/moedawithflag'"></select>
+					
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col col-33" style="position: relative;top:5px;">
+					<label style="color:  rgb(81,159,202);">Address</label>
+				</div>
+				<div class="col" >
+					<input type="text" ng-model="profile.ADDRESS" style="width: 110%;color:  rgb(39,83,135);padding-left:5px;">	
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col col-33" style="position: relative;top:5px;">
+					<label style="color:  rgb(81,159,202);">Post code</label>
+				</div>
+				<div class="col" >
+					<input type="text"  ng-model="profile.POSTCODE" style="width: 110%;color:  rgb(39,83,135);padding-left:5px;">	
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col col-33" style="position: relative;top:5px;">
+					<label style="color:  rgb(81,159,202);">City</label> <!-- {{ city1 }} {{ profile.CITY }}-->
+				</div>
+				<div class="col" >
+					<!-- <input type="text"  ng-model="profile.CITY" style="width: 110%;color:  rgb(39,83,135);padding-left:5px;"> -->	
+					<select name="city" ng-model="city1" class="form-control item item-input" ng-change="hasChanged(city1.id)"
+					ng-options="city as city.name for city in cities" style="color:  rgb(39,83,135);padding-left:5px;">
+					<option value="">Select city</option>
+					</select>
+					<input type="hidden" ng-model="profile.CITY">	
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col col-33" style="position: relative;top:5px;">
+					<label style="color:  rgb(81,159,202);">Mobile</label>
+				</div>
+				<div class="col" >
+				<input type="text" ng-model="profile.MOBILE"  style="width: 110%;color:  rgb(39,83,135);padding-left:5px;">	
+				</div>
+<script type="text/ng-template" id="selector/demo/moedawithflagv">
+	<i class="flag" ng-class="option.flag.toLowerCase()"></i><span style="font-size:0.85em !important;color:rgb(2,54,87) !important;font-weight:550;">{{option.name}}</span>
+</script>
+<script type="text/ng-template" id="selector/demo/moedawithflag">
+	<i class="flag" ng-class="option.flag.toLowerCase()"></i><span style="font-size:1.0em !important;color:rgb(2,54,87) !important;font-weight:550;">{{option.name}}</span>
+</script>
+			</div>
+<button type="button" ng-click="goDocuments();" class="button button-block button-positive log_btn icon-left ion-search">
+
+				View Documents
+			</button>
+			<button type="submit" class="button button-block button-positive reg_btn icon-left ion-checkmark-round">
+				Save
+			</button>
+			<button ng-click="resetPass();" type="button" class="button button-block button-neutral reg_btn icon-left ion-lock-combination" style="background-color:rgb(154,190,204);color:#FFFFFF;">
+				Change password
+			</button>
+			
+					
+				
+			</div>
+		</form>
+		
+	</ion-content>
+</ion-view>

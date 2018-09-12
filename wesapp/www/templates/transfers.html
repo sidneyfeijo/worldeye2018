@@ -1,0 +1,36 @@
+<ion-view >
+	<ion-nav-bar class="bar myHeader" align-title="center">
+
+	</ion-nav-bar> 
+
+	<ion-content class="gray-background padding login_page " style="text-align: center;">
+		<div class="card">
+			<div class="item item-text-wrap">
+
+				<font size="4" class="home-text-style-1">
+					<p class="home-text-style-1">Your transfers</p>
+				</font>
+			</div>
+		</div>
+		<ion-list class="list ">
+			<ion-item ng-repeat="transfer in transfers" class="row" style="position: relative;left: 15px;" >
+				<div ng-class="transfer.icon" style="{{transfer.estilo}}">
+				</div>
+				<div class="col" style="text-align: left;">
+					<font size="4" class="home-text-style-1" style="position: relative;left: 15px;"> 
+						<p class="home-text-style-1">	{{transfer.firstname}} {{transfer.lastname}}</p>
+						<p class="home-text-style-3">	Nr {{transfer.id}} {{transfer.valuepaid | currency : ''}} {{transfer.currency}}</p>
+						<p class="home-text-style-1">	{{transfer.created}} - {{transfer.status}}</p>
+					</font>
+				</div>
+				<!-- <div class="col" style="text-align: right;">
+					<font size="4" class="home-text-style-1"> 
+						<p class="home-text-style-1">	{{transfer.valuepaid | currency : ''}}</p>
+						<p class="home-text-style-1">	{{transfer.currency}}</p>
+					</font>
+				</div> -->
+			</ion-item>
+
+		</ion-list>
+	</ion-content>
+</ion-view>

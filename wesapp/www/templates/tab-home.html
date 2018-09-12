@@ -1,0 +1,111 @@
+<ion-view >
+  <ion-nav-bar class="bar myHeader" align-title="center">
+  
+  </ion-nav-bar> 
+  
+  <ion-content class="gray-background">
+    <div class="home-slider-content">
+      <div class="row home-row-input">
+        <div class="col col-50 home-col-select">
+			<!--<p>-->
+				<!--<div class="home-flag-position-gbp" ng-class="moedaOrigem.flag"></div>-->
+			<!--</p>-->
+				<div class="col col-10 home-flag-position-gbp" ng-class="flagori" style="float:left; margin-top: 5px;"></div>
+				<div class="col col-90" style="clear:both;">
+				<input id="demo-non-form1" ng-model="sel" mobiscroll-data="myData" mobiscroll-select="selectOptions1"/>
+				</div>
+<!--          <p class="home-p-select">
+<select selector
+	multi="false"
+	model="mymoedast0"
+	options="moedast0"
+	value-attr="ctry"
+	class="home-selec2"
+	remove-button="false"
+	change="updateMySelectedOptions0(oldValue, newValue)"
+	view-item-template="'selector/demo/moedawithflagv'"
+	dropdown-item-template="'selector/demo/moedawithflag'"></select>
+          </p>-->
+        </div>
+        <div class="espacamento-horizontal"></div>
+        <label class="item item-input item-stacked-label home-label-valor">
+          <span class="input-label" >
+            <font size="2"  class="home-input-label-font">You send</font>
+          </span>
+          <input class="home-valor-label-font" type="text" ng-model="valor" ng-model-options='{ debounce: 350 }' ng-change="moedaInputChange(valor);" ui-number-mask>
+        </label>
+      </div>
+      <div ></div>
+      <div class="row home-row-input" >
+        <div class="col col-50 home-col-select" >
+				<div class="col col-10 home-flag-position" ng-class="flagdes" style="float:left; margin-top: 5px;"></div>
+				<div class="col col-90" style="clear:both;">
+				<input id="demo-non-form2" ng-model="sel2" mobiscroll-data="myData2" mobiscroll-select="selectOptions2"/>
+				</div>
+		  <!--<p>
+			<div class="home-flag-position" ng-class="moedaDestino.flag"><span style="color:#000000;font-weight:550;font-size:0.65em !important;position:relative;left:1px;top: 40%;">&nbsp;</span></div>
+		  </p>
+          <p  class="home-p-select-2">
+<select selector
+	multi="false"
+	model="mymoedast"
+	options="moedast1"
+	value-attr="ctry"
+	class="home-selec2"
+	remove-button="false"
+	change="updateMySelectedOptions(oldValue, newValue)"
+	view-item-template="'selector/demo/moedawithflagv'"
+	dropdown-item-template="'selector/demo/moedawithflag'"></select>
+          <div class="home-flag-position" ng-class="moedaDestino.flag"></div>
+        </p>-->
+
+      </div>
+      <div class="espacamento-horizontal"></div>
+      <label class="item item-input item-stacked-label home-label-valor">
+        <span class="input-label" >
+          <font size="2" class="home-input-label-font">Beneficiary receives</font>
+        </span>
+		<div class="home-valor-dest">
+          {{valorDestino}}
+        </div>
+      </label>
+    </div>
+		<div class="row" style="position:relative !important;top: 4% !important;">
+      <div class="col">
+        <font size="2"  class="home-detail-font">
+          Rate: {{rate }}<!-- {{ curpairdest }} -->
+        </font>
+      </div>
+      <div class="col">
+        <font size="2" class="home-detail-font">
+          Fee: {{fee }}
+        </font>
+      </div>
+    </div>
+
+<script type="text/ng-template" id="selector/demo/moedawithflagv">
+	<span style="font-size:1.0em !important;color:rgb(2,54,87) !important;font-weight:550;">{{option.cur}}</span>
+</script>
+<script type="text/ng-template" id="selector/demo/moedawithflag">
+	<i class="flag" ng-class="option.flag.toLowerCase().replace('flag ','')"></i><span style="font-size:1.1em !important;color:rgb(2,54,87) !important;">{{option.name}}</span>
+</script>
+  </div>
+  <button type="button" class="button button-block button-positive reg_btn " style="top:20px" ng-click="goHomeBenefi(moedaDestino,valor,valorDestino,fee,rate,curpairdest,ctrycode);">
+    Send
+  </button>
+<!-- mobiscroll -->
+<br><br>
+<!--<div ng-app="app" ng-controller="HomeController">-->
+    <div class="demo-container">
+		<!--<div class="col col-10 home-flag-position-gbp" ng-class="flagori" style="float:left; margin-top: 20px;"></div>-->
+        <!--<label for="demo-non-form">Select</label>-->
+    </div>
+    <div>
+        <!--<label for="demo-non-form">Select</label>-->
+    </div>
+<!--</div>-->
+<!-- mobiscroll -->
+
+
+</ion-content>
+</ion-view>

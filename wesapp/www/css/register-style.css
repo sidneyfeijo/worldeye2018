@@ -1,0 +1,15 @@
+.register_page .item-select{
+	height:42px;
+	border-radius:5px;
+}	
+.register_page .item-select select{
+	padding:3px 10px;
+	width:100%;
+	max-width:100%;
+	direction:ltr;
+	color:#7a7a7a
+}
+.register_page h3{
+	padding:10px;
+}		
+

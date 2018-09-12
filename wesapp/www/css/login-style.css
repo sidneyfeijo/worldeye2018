@@ -1,0 +1,40 @@
+
+.logo img{
+	width:130px;
+}
+.logo{
+	margin:25px 0;
+	display:block;
+	text-align:center
+}
+.login_page {
+	margin: 0
+}
+.login_page h3{
+	color:rgb(81,159,202);
+	font-size:19px;
+	font-weight:normal;
+	text-align:center
+}	
+
+.login_page .item-input .icon {
+	padding-right:10px;
+	color: rgb(81,159,202);
+}
+.login_page .button.button-positive{
+	border:none;
+	border-radius:5px;
+	box-shadow:none;
+	color:#fff;
+	min-height:43px
+}
+.login_page .button.button-positive.log_btn{
+	background:rgb(195,231,249);
+}	
+.login_page .button.button-positive.reg_btn{
+	background:rgb(81,159,202);
+}	
+
+.login_page .button.button-positive.back_btn{
+	background:gray;
+}	

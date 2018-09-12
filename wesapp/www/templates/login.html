@@ -1,0 +1,47 @@
+<ion-view  class="gray-background">
+  <ion-nav-bar class="hide">
+  </ion-nav-bar>  
+  <ion-content class="login_page padding gray-background">
+    <div class="logo">
+      <img src="img/LogoWESTransfer1.png" />
+    </div>
+    <h3>Login</h3>
+    
+    <form novalidate name="formulario" ng-submit="login();">
+      <div class="list list-inset ">
+        <span ng-show = "formulario.$submitted && formulario.email.$error.required" class="form-control alert-danger">
+          * E-mail is required!
+        </span>
+        <label class="item item-input">
+          <a class="icon placeholder-icon ion-person" ></a>
+          <input name="email" type="email" placeholder="E-mail" ng-model="usuario.login" required>
+        </label>
+        <span ng-show = "formulario.$submitted && formulario.password.$error.required" class="form-control alert-danger">
+          * Password is required!
+        </span>
+        <label class="item item-input">
+          <a class="icon placeholder-icon ion-lock-combination"></a>
+          <input name="password" type="password" placeholder="Password" ng-model="usuario.senha" value="" required>
+        </label>
+      </div>
+
+      <span ng-show = "formulario.$submitted && mensagem.length" class="form-control alert-danger">
+        {{mensagem}}
+      </span>
+      
+      <button type="submit" class="button button-block button-positive log_btn icon-left ion-unlocked">
+        Login
+      </button>
+    </button>
+
+    <button  type="button"  class="button button-block button-positive reg_btn icon-left ion-person" ng-click="goRegister();">
+      Register
+    </button>
+    
+    
+        <button type="button" class="button button-block button-positive reg_btn icon-left ion-help" style="color:#ffffff;" ng-click="goRecover();">Forgot your password?</button>
+    
+  </form>
+</ion-content>
+
+</ion-view>
